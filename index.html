@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marc Werner</title>
+    <meta
+      name="description"
+      content="Marc Werner - digitale Projekte, Webdesign und smarte Online-Loesungen."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Marc Werner Startseite">
+        <span class="brand-mark">MW</span>
+        <span>Marc Werner</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Menue oeffnen">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Webseiten, Ideen und digitale Auftritte</p>
+          <h1>Marc Werner</h1>
+          <p class="lead">
+            Ich baue klare, moderne Online-Auftritte, die schnell starten,
+            sauber funktionieren und sich unkompliziert weiterentwickeln lassen.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#kontakt">Kontakt aufnehmen</a>
+            <a class="button secondary" href="#projekte">Arbeiten ansehen</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Abstrakte Vorschau einer modernen Website">
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="visual-layout">
+            <div class="visual-panel main-panel">
+              <strong>marcwerner.ch</strong>
+              <span>Konzept, Design, Umsetzung</span>
+            </div>
+            <div class="visual-row">
+              <div class="visual-panel"></div>
+              <div class="visual-panel"></div>
+            </div>
+            <div class="visual-strip"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="leistungen">
+        <div class="section-heading">
+          <p class="eyebrow">Was ich mache</p>
+          <h2>Digitale Projekte mit sauberer Struktur</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-number">01</span>
+            <h3>Webdesign</h3>
+            <p>Moderne Seiten, die auf Handy und Desktop gut aussehen.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-number">02</span>
+            <h3>Umsetzung</h3>
+            <p>Statische Websites, Landingpages und einfache Web-Tools.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-number">03</span>
+            <h3>Weiterentwicklung</h3>
+            <p>Bestehende Seiten verbessern, Inhalte erneuern und sauber deployen.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="projekte">
+        <div>
+          <p class="eyebrow">Aktuell</p>
+          <h2>Eine Website, die einfach gepflegt werden kann</h2>
+        </div>
+        <div class="project-list">
+          <article>
+            <span>GitHub Pages</span>
+            <h3>Hosting ohne Netlify</h3>
+            <p>
+              Die Website liegt direkt in GitHub und kann ueber marcwerner.ch
+              veroeffentlicht werden.
+            </p>
+          </article>
+          <article>
+            <span>Einfacher Workflow</span>
+            <h3>Aendern, committen, pushen</h3>
+            <p>
+              Neue Inhalte werden lokal angepasst und mit GitHub Desktop hochgeladen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontakt">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Bereit fuer den naechsten Schritt?</h2>
+          <p>
+            Schreib mir kurz, worum es geht. Ich melde mich mit einer klaren
+            Einschaetzung und den naechsten Schritten.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:hello@marcwerner.ch">hello@marcwerner.ch</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Marc Werner</span>
+      <a href="#top">Nach oben</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
