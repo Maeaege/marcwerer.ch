@@ -51,6 +51,13 @@ a {
   align-items: center;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
 .brand {
   gap: 12px;
   font-weight: 800;
@@ -340,15 +347,36 @@ h3 {
 
 .portfolio-panel {
   display: grid;
-  grid-template-columns: minmax(220px, 0.9fr) minmax(220px, 1fr);
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: center;
   padding: clamp(24px, 5vw, 46px);
 }
 
+.portfolio-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+}
+
+.portfolio-heading span {
+  color: var(--warm);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.portfolio-heading strong {
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1;
+}
+
 .pie-chart {
   aspect-ratio: 1;
-  width: min(100%, 320px);
+  width: min(100%, 360px);
   margin: 0 auto;
   border-radius: 50%;
   background:
@@ -541,7 +569,7 @@ h3 {
   .site-nav {
     position: absolute;
     top: 76px;
-    right: 20px;
+    right: 76px;
     display: none;
     width: min(260px, calc(100vw - 40px));
     flex-direction: column;
@@ -603,6 +631,20 @@ h3 {
     padding-inline: 16px;
   }
 
+  .brand span:last-child {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+
+  .language-toggle,
+  .nav-toggle {
+    width: 42px;
+    min-width: 42px;
+  }
+
   .hero,
   .page-hero,
   .section,
@@ -632,6 +674,11 @@ h3 {
 
   .metric-row strong {
     text-align: left;
+  }
+
+  .portfolio-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .site-footer {

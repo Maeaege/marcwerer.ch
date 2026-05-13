@@ -23,16 +23,19 @@
         <span>Marc Werner</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Menue oeffnen">
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a class="is-active" href="investment.html" data-i18n="navInvestment">Investment</a>
+        </nav>
 
-      <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="index.html" data-i18n="navHome">Home</a>
-        <a class="is-active" href="investment.html" data-i18n="navInvestment">Investment</a>
         <button class="language-toggle" type="button" aria-label="Switch language">EN</button>
-      </nav>
+
+        <button class="nav-toggle" type="button" aria-label="Menue oeffnen">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
@@ -48,6 +51,10 @@
         </div>
 
         <div class="portfolio-panel">
+          <div class="portfolio-heading">
+            <span data-i18n="portfolioLabel">Beispiel Portfolio</span>
+            <strong data-i18n="portfolioTitle">Aufteilung</strong>
+          </div>
           <div class="pie-chart" role="img" aria-label="Beispiel Portfolio Aufteilung"></div>
           <div class="allocation-list" aria-label="Portfolio Aufteilung">
             <div class="allocation-item">

@@ -19,6 +19,8 @@ const translations = {
     investmentTitle: "Investment",
     investmentLead:
       "Hier entsteht mein Investment-Bereich. Fuer den Start zeigt der Kuchen nur Beispielwerte, spaeter ersetzen wir sie durch echte Positionen und Inhalte.",
+    portfolioLabel: "Beispiel Portfolio",
+    portfolioTitle: "Aufteilung",
     assetStocks: "Aktien",
     assetCrypto: "Krypto",
     assetEtf: "ETFs",
@@ -43,6 +45,8 @@ const translations = {
     investmentTitle: "Investment",
     investmentLead:
       "This is where my investment area is taking shape. For now, the pie chart uses sample values; later we can replace them with real positions and content.",
+    portfolioLabel: "Sample portfolio",
+    portfolioTitle: "Allocation",
     assetStocks: "Stocks",
     assetCrypto: "Crypto",
     assetEtf: "ETFs",
