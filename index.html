@@ -6,7 +6,7 @@
     <title>Marc Werner</title>
     <meta
       name="description"
-      content="Marc Werner - persoenliche Website mit Projekten, Ideen und Investment-Bereich."
+      content="Marc Werner - persoenliche Website mit Home- und Investment-Bereich."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,111 +29,45 @@
       </button>
 
       <nav class="site-nav" aria-label="Hauptnavigation">
-        <a class="is-active" href="index.html">Home</a>
-        <a href="investment.html">Investment</a>
+        <a class="is-active" href="index.html" data-i18n="navHome">Home</a>
+        <a href="investment.html" data-i18n="navInvestment">Investment</a>
+        <button class="language-toggle" type="button" aria-label="Switch language">EN</button>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="page-hero home-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Persoenliche Website</p>
+          <p class="eyebrow" data-i18n="homeEyebrow">Home</p>
           <h1>Marc Werner</h1>
-          <p class="lead">
-            Willkommen auf meiner Website. Hier sammle ich, woran ich arbeite,
-            welche Ideen mich interessieren und welche Projekte als Naechstes
-            entstehen.
+          <p class="lead" data-i18n="homeLead">
+            Willkommen auf meiner Website. Hier entsteht ein klarer Ort fuer
+            meine Person, meine Projekte und alles, was ich spaeter zeigen will.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#kontakt">Kontakt aufnehmen</a>
-            <a class="button secondary" href="investment.html">Investment ansehen</a>
+            <a class="button primary" href="investment.html" data-i18n="homePrimary">
+              Zur Investment-Seite
+            </a>
+            <a class="button secondary" href="mailto:hello@marcwerner.ch" data-i18n="homeSecondary">
+              Kontakt
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Abstrakte Vorschau einer modernen Website">
-          <div class="browser-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="visual-layout">
-            <div class="visual-panel main-panel">
-              <strong>marcwerner.ch</strong>
-              <span>Home, Projekte, Investment</span>
-            </div>
-            <div class="visual-row">
-              <div class="visual-panel"></div>
-              <div class="visual-panel"></div>
-            </div>
-            <div class="visual-strip"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="leistungen">
-        <div class="section-heading">
-          <p class="eyebrow">Home</p>
-          <h2>Ein Ort fuer Projekte, Gedanken und neue Vorhaben</h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="card-number">01</span>
-            <h3>Ueber mich</h3>
-            <p>Eine kurze, klare Vorstellung davon, wer ich bin und woran ich arbeite.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-number">02</span>
-            <h3>Projekte</h3>
-            <p>Ein Platz fuer aktuelle Arbeiten, Experimente und digitale Ideen.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-number">03</span>
-            <h3>Investment</h3>
-            <p>Ein eigener Bereich fuer Investment-Gedanken, Strategien und Beobachtungen.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="split-section" id="projekte">
-        <div>
-          <p class="eyebrow">Aktuell</p>
-          <h2>Die Seite ist jetzt direkt mit GitHub verbunden</h2>
-        </div>
-        <div class="project-list">
-          <article>
-            <span>GitHub Pages</span>
-            <h3>Live auf marcwerner.ch</h3>
-            <p>
-              Die Website liegt direkt in GitHub und wird ueber marcwerner.ch
-              veroeffentlicht.
-            </p>
-          </article>
-          <article>
-            <span>Einfacher Workflow</span>
-            <h3>Aendern, committen, pushen</h3>
-            <p>
-              Neue Inhalte werden lokal angepasst und mit GitHub Desktop hochgeladen.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="kontakt">
-        <div>
-          <p class="eyebrow">Kontakt</p>
-          <h2>Kontakt aufnehmen</h2>
-          <p>
-            Schreib mir kurz, worum es geht. Ich melde mich mit einer klaren
-            Einschaetzung und den naechsten Schritten.
+        <div class="profile-panel">
+          <span class="panel-label" data-i18n="homePanelLabel">Persoenliche Website</span>
+          <strong>marcwerner.ch</strong>
+          <p data-i18n="homePanelText">
+            Eine einfache, getrennte Struktur: Home fuer die Vorstellung,
+            Investment fuer Portfolio-Ideen.
           </p>
         </div>
-        <a class="button primary" href="mailto:hello@marcwerner.ch">hello@marcwerner.ch</a>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>(c) <span id="year"></span> Marc Werner</span>
-      <a href="investment.html">Investment</a>
+      <a href="investment.html" data-i18n="navInvestment">Investment</a>
     </footer>
 
     <script src="script.js"></script>
