@@ -6,7 +6,7 @@
     <title>Marc Werner</title>
     <meta
       name="description"
-      content="Marc Werner - digitale Projekte, Webdesign und smarte Online-Loesungen."
+      content="Marc Werner - persoenliche Website mit Projekten, Ideen und Investment-Bereich."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Marc Werner Startseite">
+      <a class="brand" href="index.html" aria-label="Marc Werner Startseite">
         <span class="brand-mark">MW</span>
         <span>Marc Werner</span>
       </a>
@@ -29,24 +29,24 @@
       </button>
 
       <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="#leistungen">Leistungen</a>
-        <a href="#projekte">Projekte</a>
-        <a href="#kontakt">Kontakt</a>
+        <a class="is-active" href="index.html">Home</a>
+        <a href="investment.html">Investment</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Webseiten, Ideen und digitale Auftritte</p>
+          <p class="eyebrow">Persoenliche Website</p>
           <h1>Marc Werner</h1>
           <p class="lead">
-            Ich baue klare, moderne Online-Auftritte, die schnell starten,
-            sauber funktionieren und sich unkompliziert weiterentwickeln lassen.
+            Willkommen auf meiner Website. Hier sammle ich, woran ich arbeite,
+            welche Ideen mich interessieren und welche Projekte als Naechstes
+            entstehen.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#kontakt">Kontakt aufnehmen</a>
-            <a class="button secondary" href="#projekte">Arbeiten ansehen</a>
+            <a class="button secondary" href="investment.html">Investment ansehen</a>
           </div>
         </div>
 
@@ -59,7 +59,7 @@
           <div class="visual-layout">
             <div class="visual-panel main-panel">
               <strong>marcwerner.ch</strong>
-              <span>Konzept, Design, Umsetzung</span>
+              <span>Home, Projekte, Investment</span>
             </div>
             <div class="visual-row">
               <div class="visual-panel"></div>
@@ -72,24 +72,24 @@
 
       <section class="section" id="leistungen">
         <div class="section-heading">
-          <p class="eyebrow">Was ich mache</p>
-          <h2>Digitale Projekte mit sauberer Struktur</h2>
+          <p class="eyebrow">Home</p>
+          <h2>Ein Ort fuer Projekte, Gedanken und neue Vorhaben</h2>
         </div>
         <div class="service-grid">
           <article class="service-card">
             <span class="card-number">01</span>
-            <h3>Webdesign</h3>
-            <p>Moderne Seiten, die auf Handy und Desktop gut aussehen.</p>
+            <h3>Ueber mich</h3>
+            <p>Eine kurze, klare Vorstellung davon, wer ich bin und woran ich arbeite.</p>
           </article>
           <article class="service-card">
             <span class="card-number">02</span>
-            <h3>Umsetzung</h3>
-            <p>Statische Websites, Landingpages und einfache Web-Tools.</p>
+            <h3>Projekte</h3>
+            <p>Ein Platz fuer aktuelle Arbeiten, Experimente und digitale Ideen.</p>
           </article>
           <article class="service-card">
             <span class="card-number">03</span>
-            <h3>Weiterentwicklung</h3>
-            <p>Bestehende Seiten verbessern, Inhalte erneuern und sauber deployen.</p>
+            <h3>Investment</h3>
+            <p>Ein eigener Bereich fuer Investment-Gedanken, Strategien und Beobachtungen.</p>
           </article>
         </div>
       </section>
@@ -97,15 +97,15 @@
       <section class="split-section" id="projekte">
         <div>
           <p class="eyebrow">Aktuell</p>
-          <h2>Eine Website, die einfach gepflegt werden kann</h2>
+          <h2>Die Seite ist jetzt direkt mit GitHub verbunden</h2>
         </div>
         <div class="project-list">
           <article>
             <span>GitHub Pages</span>
-            <h3>Hosting ohne Netlify</h3>
+            <h3>Live auf marcwerner.ch</h3>
             <p>
-              Die Website liegt direkt in GitHub und kann ueber marcwerner.ch
-              veroeffentlicht werden.
+              Die Website liegt direkt in GitHub und wird ueber marcwerner.ch
+              veroeffentlicht.
             </p>
           </article>
           <article>
@@ -121,7 +121,7 @@
       <section class="contact-section" id="kontakt">
         <div>
           <p class="eyebrow">Kontakt</p>
-          <h2>Bereit fuer den naechsten Schritt?</h2>
+          <h2>Kontakt aufnehmen</h2>
           <p>
             Schreib mir kurz, worum es geht. Ich melde mich mit einer klaren
             Einschaetzung und den naechsten Schritten.
@@ -132,8 +132,8 @@
     </main>
 
     <footer class="site-footer">
-      <span>© <span id="year"></span> Marc Werner</span>
-      <a href="#top">Nach oben</a>
+      <span>(c) <span id="year"></span> Marc Werner</span>
+      <a href="investment.html">Investment</a>
     </footer>
 
     <script src="script.js"></script>

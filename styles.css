@@ -80,6 +80,20 @@ a {
   color: var(--accent);
 }
 
+.site-nav a.is-active {
+  color: var(--ink);
+}
+
+.site-nav a.is-active::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -262,6 +276,46 @@ h3 {
   );
 }
 
+.investment-hero {
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.09), transparent 46%),
+    var(--paper);
+}
+
+.investment-card {
+  display: grid;
+  gap: 0;
+  padding: 0;
+}
+
+.metric-row {
+  display: flex;
+  min-height: 118px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.metric-row:last-child {
+  border-bottom: 0;
+}
+
+.metric-row span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.metric-row strong {
+  max-width: 260px;
+  text-align: right;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.05;
+}
+
 .section,
 .split-section,
 .contact-section {
@@ -373,6 +427,10 @@ h3 {
     border-bottom: 1px solid var(--line);
   }
 
+  .site-nav a.is-active::after {
+    width: 32px;
+  }
+
   .site-nav a:last-child {
     border-bottom: 0;
   }
@@ -419,6 +477,15 @@ h3 {
 
   .visual-row {
     grid-template-columns: 1fr;
+  }
+
+  .metric-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .metric-row strong {
+    text-align: left;
   }
 
   .site-footer {
